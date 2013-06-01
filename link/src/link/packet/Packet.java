@@ -11,16 +11,16 @@ import java.io.Serializable;
 public class Packet implements Serializable {
   
   private static final long serialVersionUID = 2347350252515231743L;
-  public final PacketCode code;
+  public final int code;
   
   /*
    * Require the use of this constructor; Require that every packet has a type
    */
-  public Packet(PacketCode code) {
+  public Packet(int code) {
     this.code = code;
   }
   
-  public PacketCode getCode() {
+  public int getCode() {
     return code;
   }
 }

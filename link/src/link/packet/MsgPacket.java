@@ -5,7 +5,7 @@ public class MsgPacket extends Packet {
   private final String msg;
   
   public MsgPacket(String msg) {
-    super(PacketCode.MSG_PACKET);
+    super(0);
     this.msg = msg;
   }
   
